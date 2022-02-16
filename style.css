@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Blue: #4f7df3;
+  --Pale-Blue: #c2d3ff;
+  --Light-Red: hsl(354, 100%, 66%);
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+body {
+  font-size: 20px;
+  font-family: "Libre Franklin", sans-serif;
+  /* height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+	width: 100%;
+  text-align: center;
+}
+
+header {
+  margin-top: 30px;
+}
+
+.logo {
+  width: 100%;
+}
+
+h1 {
+  font-weight: 300;
+  color: var(--Gray);
+}
+
+span {
+  font-weight: 700;
+  color: var(--Very-Dark-Blue);
+}
+
+section h1 {
+  font-size: 2.8rem;
+  padding: 25px;
+}
+
+section p {
+  padding-bottom: 25px;
+}
+
+section form {
+  padding-bottom: 50px;
+}
+
+form input {
+  width: 355px;
+  height: 2.5rem;
+  border-radius: 25px;
+  border: 1px solid var(--Pale-Blue);
+  padding: 10px;
+  color: var(--Pale-Blue);
+}
+
+::placeholder {
+  color: var(--Pale-Blue);
+}
+
+form button {
+  height: 2.5rem;
+  border: none;
+  border-radius: 25px;
+  width: 140px;
+  background-color: var(--Blue);
+  color: white;
+  box-shadow: 0 5px #ecf1ff;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #305ac5;
+
+  transition: background-color 0.3s;
+}
+
+.invalid {
+  border-color: var(--Light-Red);
+}
+
+.error-message {
+  text-align: left;
+	padding: 10px;
+	margin-left: 10px;
+  font-size: 0.9rem;
+  color: var(--Light-Red);
+}
+
+main img {
+  width: 640px;
+}
+
+.icons {
+  padding: 3rem;
+  display: flex;
+  gap: 20px;
+}
+
+i {
+  border: 1px solid var(--Pale-Blue);
+  border-radius: 50%;
+  padding: 10px;
+  width: 2.5rem;
+}
+
+a {
+  color: var(--Blue);
+}
+
+a:hover i {
+  background-color: var(--Blue);
+  color: white;
+  transition: background-color 0.5s;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 700px) {
+	form {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
+		position: relative;
+	}
+
+	form button {
+		width: 355px;
+		margin-top: 10px;
+	}
+
+	main img {
+		width: 100%;
+		height: 100%;
+	}
+
+	section {
+		width: 100%;
+	}
+}
